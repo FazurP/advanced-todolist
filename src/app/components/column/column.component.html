@@ -1,0 +1,13 @@
+<div class="column">
+    <div class="column-header">
+        <div class="column-title">
+            <p>{{columnName}}</p>
+        </div>
+        <button (click)="openAddTaskDialog()" mat-icon-button aria-label="Example icon-button with menu icon">
+            <mat-icon>add</mat-icon>
+        </button>
+    </div>
+    <div class="column-body">
+        <app-task *ngFor="let task of tasks" [task]="task" style="padding: 10px; margin-top: 10px"></app-task>
+    </div>
+</div>

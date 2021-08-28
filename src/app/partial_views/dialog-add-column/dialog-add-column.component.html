@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Hi, User</h1>
+<div mat-dialog-content>
+    <p>Enter column name</p>
+    <mat-form-field appearance="fill">
+        <mat-label>Column name</mat-label>
+        <input matInput [(ngModel)]="column.columnName">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Close</button>
+    <button mat-button cdkFocusInitial (click)="onSaveColumn()" mat-dialog-close>Create</button>
+</div>
